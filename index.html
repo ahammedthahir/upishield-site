@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UPIShield – Student UPI Fraud Detection Project</title>
+<meta name="description" content="UPIShield is a student project that uses a 1D-CNN deep learning model to estimate fraud risk for UPI payments and checks whether a UPI ID exists.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav>
+  <span class="brand">UPIShield</span>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms &amp; Conditions</a>
+  <a href="refund.html">Refund Policy</a>
+  <a href="#contact">Contact</a>
+</nav></header>
+<main>
+  <h1>UPIShield: Real-Time UPI Fraud Detection</h1>
+  <p>UPIShield is an educational software project built by a student. It helps a user check a UPI payment <em>before</em> sending money by showing a fraud-risk level for the payment.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">What it does</h2>
+    <ul>
+      <li><strong>Fraud risk scoring:</strong> a 1D convolutional neural network (CNN) estimates the risk of a payment and labels it SAFE, CAUTION or HIGH RISK.</li>
+      <li><strong>UPI ID (VPA) verification:</strong> checks whether an entered UPI ID exists, using a payment gateway verification API.</li>
+      <li><strong>Phishing pattern warnings:</strong> flags suspicious words in UPI IDs such as "refund", "kyc" or "prize".</li>
+      <li><strong>Mobile app:</strong> a Flutter app sends the UPI ID and amount to a Python (FastAPI) backend that returns the result.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">About this project</h2>
+    <p>UPIShield is a non-commercial academic project. It does not sell products or services and does not charge users. UPIShield itself never holds, receives or transfers money. After showing a risk score, the app can open the user’s own UPI app (such as Google Pay or PhonePe) so the user can choose to pay the recipient there. The payment is made entirely inside that UPI app, using the user’s own bank account and UPI PIN, and is processed by that app and the user’s bank. Payment-gateway APIs are used only to verify that a UPI ID exist.</p>
+  </div>
+
+  <h2 id="contact">Contact</h2>
+  <p>Developer: <strong>AHAMMED THAHIR</strong><br>
+  Email: <a href="mailto:[YOUR EMAIL]">ahamedthahir28@gmail.com</a><br>
+  Phone:8714250944<br>
+  Location: Manjeswar,kasargod, Kerala, India</p>
+</main>
+<footer>&copy; 2026 UPIShield. An educational project. This tool gives risk estimates only and is not a guarantee against fraud.</footer>
+</body>
+</html>
